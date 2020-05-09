@@ -94,3 +94,20 @@ Add below configuration in webpack.config.js
         ]
     }
 ```
+
+## Adding Preset
+
+Install @babel/preset-env
+```bash
+npm i -D @babel/preset-env
+```
+
+Add below configuration in webpack.config.js under loader
+```js
+                use:{
+                    loader: 'babel-loader',
+                    options:{
+                        presets:['@babel/preset-env'],
+                    }
+                }
+```
