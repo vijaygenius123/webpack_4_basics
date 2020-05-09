@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/vijaygenius123/webpack_4_basics/issues"
   },
-  "homepage": "https://github.com/vijaygenius123/webpack_4_basics#readme"
+  "homepage": "https://github.com/vijaygenius123/webpack_4_basics#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
