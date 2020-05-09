@@ -72,3 +72,25 @@ Added below configuration to package.json under scripts
 ```
 
 So now we can run `npm run build`
+
+## Adding Babel
+
+```bash
+npm i -D babel-loader @babel/core
+```
+
+Add below configuration in webpack.config.js
+
+```js
+    module:{
+        rules:[
+            {
+                test: /\.js$/,
+                exclude: /(node_nodules)/,
+                use:{
+                    loader: 'babel-loader'
+                }
+            }
+        ]
+    }
+```

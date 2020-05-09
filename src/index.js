@@ -1,5 +1,5 @@
-const $ = require('jquery')
+import $ from 'jquery';
 
-setTimeout(function () {
+setTimeout(() => {
     $('#target').text("Hello Webpack")
 }, 1000);
