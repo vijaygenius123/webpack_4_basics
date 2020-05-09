@@ -51,3 +51,24 @@ and ran
 ```
 
 This will run webpack with default configuration
+
+
+## Create A Basic Webpack Config
+
+```js
+const path = require('path');
+
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist')
+    }
+}
+```
+Added below configuration to package.json under scripts
+```json
+    "build": "webpack"
+```
+
+So now we can run `npm run build`
